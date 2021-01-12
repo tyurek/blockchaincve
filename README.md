@@ -75,7 +75,7 @@ Files of interest:
 
 `~\tmapp\src\main\java\io\example\KVStoreApp.java` specifies the Tendermint application which communicates with Tendermint Core program over ABCI (implemented via grpc).
 
-Future Work:
+## Future Work:
 The validate() function in KVStoreApp.java is not completed. Essentially this is where validators would sanity check a potential entry, by for example making sure it is formatted correctly and doesn't already exist as an entry. This would be a good place to enforce some sort of system for vulnerability notification identifier numbers.
 
 There should be some sort of identity validation for vendors. Perhaps a signature under a known public key (possibly enforced by the validate() function above).
