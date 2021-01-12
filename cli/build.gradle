@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'idea'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:27.0.1-jre'
+    implementation 'com.google.crypto.tink:tink-android:1.5.0'
+    compile 'commons-codec:commons-codec:1.15'
+    testImplementation 'junit:junit:4.12'
+    compile "org.bouncycastle:bcprov-jdk15to18:1.67", "org.bouncycastle:bcpg-jdk15to18:1.67", "org.bouncycastle:bcmail-jdk15to18:1.67"
+    compile group: 'org.json', name: 'json', version: '20201115'
+
+}
+
+mainClassName = 'io.example.App'

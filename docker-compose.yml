@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  tendermintexp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./tmapp:/home/gitpod/tmapp/
+      - ./cli:/home/gitpod/cli/
